@@ -1,0 +1,282 @@
+@charset "UTF8-8";
+
+
+html, body, #home{
+	height: 100%;
+	overflow-x:hidden; /*esconde a barra  horizontal no fim do site*/
+	/*overflow-y: hidden; esconde a barra vertical do site*/
+}
+
+/* Barra de navegacao
+----------------------------------------------*/
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+	text-decoration: none;
+}
+.navbar .logo .tech{
+    color: rgb(20, 220, 213);
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+}
+
+nav.navbar-transparente{
+	padding: 15px 0px;
+	background: black;
+}
+
+.navbar-light .navbar-nav .nav-link{
+	color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+	color:#24C7FE;
+}
+
+.navbar-light .navbar-toggler{
+	color: rgba(255, 255, 255,.5);
+	border-color: rgba(255, 255, 255,0.5);
+}
+
+.divisor{
+	width: 1px;
+	background: white;
+	margin: 12px 15px;
+}
+
+/* Capa
+----------------------------------------------*/
+
+.aLvTech{
+	font-size: 90px;
+	font-weight:400;
+	color: #fff;
+}
+
+ .text-3{
+    color: #000000;
+    font-weight: 40;
+	font-size: 50px;
+
+}
+.temos{
+	color: #fff;
+	font-size: 50px;
+}
+
+/* Vantagens
+----------------------------------------------*/
+
+.vantagens
+{
+    padding: 50px;
+    background-color:#4E95FB;
+}
+
+.titulo1
+{
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+    text-align: center;
+}
+
+.paragrafo1
+{
+    text-align: justify;
+    color: rgb(255, 255, 255);
+}
+
+/* Pacotes
+----------------------------------------------*/
+.titulo2
+{
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(8, 136, 227);
+}
+
+.cabecario
+{
+	padding: 15px;
+	text-align: center;
+}
+
+.card
+{
+	border-radius: 20px;
+}
+
+.header1
+{
+  color: #3E05FA;
+
+}
+
+.header2
+{
+	color:#892DE0;
+
+}
+
+.header3
+{
+  color:#CC04B1;
+
+}
+
+.fas
+{
+	color: #29af70;
+}
+
+.no
+{
+	color: rgb(193, 54, 54);
+}
+
+.descricao
+{
+	color: #000000;
+}
+
+.card1:hover
+{
+	transform: scale(1.05);
+	border: 3px solid  #3E05FA;
+	transition: all 0.3s ease;
+}
+
+.card2:hover
+{
+	transform: scale(1.05);
+	border: 3px solid  #892DE0;
+	transition: all 0.3s ease;
+}
+
+.card3:hover
+{
+	transform: scale(1.05);
+	border: 3px solid  #CC04B1;
+	transition: all 0.3s ease;
+}
+
+/*--------------------- Footer ----------------------------*/
+footer
+{
+	background: black;
+	height: 100px;
+}
+
+.logo a
+{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+	text-decoration: none;
+}
+
+.icons3
+{
+	margin-top: 30px;
+	margin-left: 550px;
+	
+}
+
+.logo 
+{
+	color: white;
+    font-size: 35px;
+    font-weight: 600;
+	text-decoration: none;
+	margin-top: 20px;
+	
+}
+
+.logo .tech
+{
+	color: rgb(20, 220, 213);
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (min-width: 280px) and (max-width: 576px){
+		
+	.services
+	{
+		margin-top: 70px;
+	}
+	
+	.card
+	{
+		size: 50px;
+	}
+	h2
+	{
+	  font-size: 2em;
+	}
+
+	h4
+	{
+	   font-size: 1em;
+	}
+
+	p
+	{
+	   font-size: 0.8em;
+	}
+
+	h5
+	{
+	   font-size: 1.1em; 
+	}
+
+	.card
+	{
+		width: 800px;
+	}
+
+	li
+		{
+			font-size: 0.7em;
+		}
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 568x) and (max-width: 768px){
+
+
+
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 992px) { 
+
+
+
+.services{
+	grid-template-columns: repeat(1, 1fr);
+}
+
+
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  
+
+
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1000px) {
+
+
+.services{
+	grid-template-columns: repeat(2, 1fr);
+}
+}

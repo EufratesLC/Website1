@@ -1,0 +1,385 @@
+@charset "UTF8-8";
+
+
+:root{
+    --cor0:#c5ebd6;
+    --cor1:#83e1ad;
+    --cor02:#390132;
+    --cor03:#2fa866;
+    --cor04:#1a5c37;
+    --cor05:#2DC3FF;
+
+  --fonte-padrao: Arial, verdana, Helvetica, sans-serif;
+  --font-destaque: 'Mali', cursive;
+  --font-android: 'Android', cursive;
+}
+
+
+/*Layout*
+---------------------------------------*/
+html, body, #home{
+	height: 100%;
+	overflow-x:hidden; /*esconde a barra  horizontal no fim do site*/
+	/*overflow-y: hidden; esconde a barra vertical do site*/
+}
+
+
+#home{
+	
+	height: 100%;
+	/*background-color:  rgb(8, 136, 227);*/
+	
+	background-image: linear-gradient(to right,var(--cor02), var(--cor05));
+	
+}
+
+
+
+/* Barra de navegacao
+----------------------------------------------*/
+
+ .navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+	text-decoration: none;
+}
+.navbar .logo .tech{
+    color: rgb(20, 220, 213);
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+}
+
+
+nav.navbar-transparente{
+	padding: 15px 0px;
+	background: rgb(0, 0, 0);
+}
+
+.navbar-light .navbar-nav .nav-link{
+	color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+	color: #24C7FE;
+}
+
+.navbar-light .navbar-toggler{
+	color: rgba(255, 255, 255,.5);
+	border-color: rgba(255, 255, 255,0.5);
+}
+
+.divisor{
+	width: 1px;
+	background: white;
+	margin: 12px 15px;
+}
+
+/* Capa
+----------------------------------------------*/
+
+.aLvTech{
+	font-size: 90px;
+	font-weight:400;
+	color: #fff;
+}
+
+ .text-3{
+    color: #000000;
+    font-weight: 40;
+	font-size: 50px;
+
+}
+.temos{
+	color: #fff;
+	font-size: 50px;
+}
+
+
+
+
+
+
+.carousel-control-next, .carousel-control-prev{
+	width: 5%;
+}
+
+/* Tipografia
+----------------------------------------------*/
+h1{
+	font-weight: 900px;
+	letter-spacing: -0.05em;
+	color: white;
+}
+
+h2{
+	font-size: 3em;
+	font-weight: 700px;
+	letter-spacing: -0.04em;
+}
+
+h3{
+	font-size: 2em;
+	font-weight: 700px;
+	letter-spacing: -0.04em;
+}
+
+/*------------------------------------ Section ----------------------------*/
+/*----Sobre ----------------------------*/
+
+.sobre
+{
+	padding: 40px; 
+}
+
+#titulo1
+{
+	text-align: center;
+	margin-top: 20px;
+	color:  rgb(8, 136, 227);
+	/*border: 3px solid red;*/
+}
+
+#texto1
+{
+	text-align: justify;
+}
+/*----Servicos ----------------------------*/
+.services
+{
+     
+	background-image: linear-gradient(to left,var(--cor02), var(--cor05));
+}
+
+
+#titulo2
+{
+	text-align: center;
+	color:  rgb(255, 255, 255);
+	/*border: 3px solid red;*/
+	
+}
+
+.cabecario
+{
+	text-align: center;
+}
+
+.titulo
+{
+	text-align: center;
+}
+
+.textcard
+{
+	text-align: justify;
+}
+
+/*.icons1
+{
+	color:rgb(8, 136, 227) ;
+    font-size: 30px;
+	margin-left: 120px;
+	margin-top: 20px;
+}*/
+
+.card
+{
+	min-width: 300px;
+	
+}
+
+.card:hover
+{
+	transform: scale(1.05);
+	
+	transition: all 0.3s ease;
+	
+}
+
+
+
+#servicos{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 30px 20px;
+	grid-column-gap: 30px;
+}
+.item:hover{
+	transform: scale(1.04);
+}
+
+.item{
+	border-radius: 15px;
+	box-shadow:0 0 15px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+	margin-top: 50px;
+	width: 300px;
+	border: 3px solid rgb(250, 250, 250);
+	background-color: #fff;
+}
+
+.texto2
+{
+	padding: 8px;
+	text-align: justify;
+}
+
+.boton1
+{ 
+	margin-left: 60px;
+	background-color:  rgb(8, 136, 227);
+	color: white;
+}
+
+.boton1:hover
+{
+	background-color: #892DE0;
+	color: white;
+}
+/*---------------- Contacte-nos ----------------------------*/
+.titulo3
+{
+    text-align: center;
+    /*border: 3px solid red;*/
+	color:  rgb(8, 136, 227);
+}
+
+.texto2
+{
+   text-align: justify;
+}
+
+.contactos2
+{
+	margin-top: 10px;
+  
+}
+
+.row
+{
+	padding: 0 20px;
+	width: 100%;
+}
+
+input, textarea
+{
+  width: 80%;
+  padding: 10px;
+ 
+  
+}
+
+
+/*--------------------- Footer ----------------------------*/
+footer
+{
+	background: black;
+	height: 100px;
+
+	
+}
+
+.logo a
+{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+	text-decoration: none;
+}
+
+.icons3
+{
+	margin-top: 30px;
+	margin-left: 550px;
+	
+}
+
+.logo 
+{
+	color: white;
+    font-size: 35px;
+    font-weight: 600;
+	text-decoration: none;
+	margin-top: 20px;
+	
+}
+
+.logo .tech
+{
+	color: rgb(20, 220, 213);
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (min-width: 280px) and (max-width: 576px){
+		
+	    .services
+		{
+			margin-top: 70px;
+		}
+        
+		.card
+		{
+			size: 50px;
+		}
+		h2
+		{
+          font-size: 2em;
+		}
+
+		h4
+		{
+           font-size: 1em;
+		}
+
+		p
+		{
+           font-size: 0.8em;
+		}
+
+		h5
+		{
+           font-size: 1.1em; 
+		}
+		
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 568x) and (max-width: 768px){
+	
+
+	
+	
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 992px) { 
+	
+
+	
+	.services{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	
+	
+
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  
+	
+    
+	
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1000px) {
+
+
+	.services{
+		grid-template-columns: repeat(2, 1fr);
+	}
+ }
